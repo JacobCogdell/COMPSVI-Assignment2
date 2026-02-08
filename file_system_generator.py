@@ -1,5 +1,5 @@
 """
-File System Generator for Recursion Assignment
+File System Generator for Recursn Assignment
 Generates a simulated compromised file system with nested directories
 and files with various extensions including .encrypted files.
 """
@@ -91,10 +91,10 @@ def generate_breach_data(root_path="breach_data", max_depth=8, max_dirs=5, max_f
         total_files += len(files)
         infected_files += len([f for f in files if f.endswith('.encrypted')])
     
-    print(f"✓ File system generated at: {root_path}/")
-    print(f"✓ Total files: {total_files}")
-    print(f"✓ Infected files (.encrypted): {infected_files}")
-    print(f"✓ Infection rate: {infected_files/total_files*100:.1f}%")
+    print(f" File system generated at: {root_path}/")
+    print(f" Total files: {total_files}")
+    print(f" Infected files (.encrypted): {infected_files}")
+    print(f" Infection rate: {infected_files/total_files*100:.1f}%")
     print("\nYou can now implement your recursive functions to analyze this breach!")
 
 def generate_test_cases():
@@ -144,7 +144,7 @@ def generate_test_cases():
     with open(os.path.join(level2, "virus.encrypted"), 'w') as f:
         f.write("test")
     
-    print(f"\n✓ Test cases generated at: {test_dir}/")
+    print(f"\n Test cases generated at: {test_dir}/")
     print("\nTest Case 1 (case1_flat): 5 files, max depth 0")
     print("Test Case 2 (case2_nested): 4 files total (1 root + 3 in subdir), max depth 1")
     print("Test Case 3 (case3_infected): 5 files total, 3 .encrypted files, max depth 2")
